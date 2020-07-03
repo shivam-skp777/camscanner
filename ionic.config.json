@@ -1,5 +1,7 @@
 {
   "name": "skp-sir-proj",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
