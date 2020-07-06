@@ -10,7 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DocumentScanner } from '@ionic-native/document-scanner/ngx';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
-
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -20,7 +20,8 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     DocumentScanner,
-    BarcodeScanner
+    BarcodeScanner,
+    SocialSharing
   ],
   bootstrap: [AppComponent]
 })
