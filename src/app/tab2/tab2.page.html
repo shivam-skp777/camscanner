@@ -8,5 +8,12 @@
 
 <ion-content [fullscreen]="true">
   <ion-button (click)="scanBarcode()">Scan Barcode</ion-button>
-  <img [src]="scannedData" />
+  <div *ngIf="scannedData">
+    <p>
+      Scanned Code Text : <b>{{ scannedData["text"] }}</b>
+    </p>
+    <p>
+      Scanned Code Format : <b>{{ scannedData["format"] }}</b>
+    </p>
+  </div>
 </ion-content>
